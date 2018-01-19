@@ -248,6 +248,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/chromebook-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aDiao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="aDiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/19/chromebook-hexo/" itemprop="url">chromebook上搭建hexo</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-19T17:18:29+08:00">2018-01-19</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Chromebook搭建hexo环境"><a href="#Chromebook搭建hexo环境" class="headerlink" title="Chromebook搭建hexo环境"></a>Chromebook搭建hexo环境</h1><p>标签（空格分隔）： 折腾记录</p>
+<hr>
+<p>始 2018 1 19 16:55</p>
+<hr>
+<p>前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。</p>
+<hr>
+<p>但是我并不喜欢在寝室里写东西，虽然我那个垃圾机械键盘打字特爽，还是教室和图书馆暖气舒服些。于是我尝试着在我的VPS上搭建了hexo客户端，还成功了，正常使用。但是这个行为特傻，在一台远程Linux主机上渲染好hexo网页文件再通过git把远程主机上的网页文件推送到github page，反正我觉得傻。而且远程编辑对网络要求比较严格，延迟高一点写起来不要太爽。</p>
+<hr>
+<p>于是想起来在我的chromebook上搭hexo客户端，昨晚弄开发者模式，清除数据，重新激活，完蛋。上次激活用的方法不行了，大半夜，2点，用手机开热点给win10电脑，电脑用上anyconnect的VPN，再开WiFi给Chromebook，不行！开不了，于是放弃。今早上（11点）起来尝试在电脑上用shadowsocks全局代理，允许来自局域网连接，Chromebook和电脑连上同一路由器，设置Chromebook代理为手动HTTP，地址就是电脑ip(192.168.xxx.xxx)，端口1080，因为shadowsocks代理的端口是1080。然后就成了。</p>
+<hr>
+<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！<br>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
+<hr>
+<p>终5：14</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/hexo-githubd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -534,7 +666,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
