@@ -248,6 +248,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/hexo-githubd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aDiao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="aDiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/19/hexo-githubd/" itemprop="url">hexo+githubd</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-19T16:48:13+08:00">2018-01-19</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="如何用hexo和GitHub建立一个个人博客"><a href="#如何用hexo和GitHub建立一个个人博客" class="headerlink" title="如何用hexo和GitHub建立一个个人博客"></a>如何用hexo和GitHub建立一个个人博客</h1><h2 id="简单博客需要一个域名和一个放网页文件的空间"><a href="#简单博客需要一个域名和一个放网页文件的空间" class="headerlink" title="简单博客需要一个域名和一个放网页文件的空间"></a>简单博客需要一个域名和一个放网页文件的空间</h2><hr>
+<h2 id="1、博客空间。"><a href="#1、博客空间。" class="headerlink" title="1、博客空间。"></a>1、博客空间。</h2><p>注册GitHub，并创建repository，命名规则为“username.github.io”。创建的同时初始化readme.md. 此时<a href="http://username.github.io/" target="_blank" rel="noopener">http://username.github.io/</a> 应该已经可以访问。如果不可以，在repository首页点击setting，下拉到GitHub pages检查是什么问题。这就是博客空间，免费300M。<br>在任意终端（Windows是打开cmd，Mac是打开终端）输入 ping username.github.io ，这步是为了得到博客空间的IP地址，用于绑定域名。</p>
+<hr>
+<h2 id="2、注册域名。"><a href="#2、注册域名。" class="headerlink" title="2、注册域名。"></a>2、注册域名。</h2><p>可以在<a href="http://freenom.com" target="_blank" rel="noopener">freenom.com</a>注册免费一年的域名，后缀为.cf .ga .gq .ml 等是免费的。注册好后点击services&gt;my domains. 点击域名，点击freenom dns，添加A记录为ip地址，CNAME记录为username.github.io. 十分钟左右访问域名就能访问到GitHub Page，内容应该为username.github.io，其他啥都没有。</p>
+<hr>
+<h2 id="3、网页文件和博客内容。"><a href="#3、网页文件和博客内容。" class="headerlink" title="3、网页文件和博客内容。"></a>3、网页文件和博客内容。</h2><p>在本机搭建hexo环境（因为我选择hexo，也可以是其他的）。这里的原理是在本机生成网页文件，然后用git将网页文件推送到GitHub repository，也就是你的博客空间。环境搭建参考hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<hr>
+<h2 id="4、文件推送。"><a href="#4、文件推送。" class="headerlink" title="4、文件推送。"></a>4、文件推送。</h2><p>连接上GitHub，打开_config.yml（hexo配置文件，以空格为缩进，冒号后面必须有空格）文件最后添加或改写为<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a><br>  branch: master</p>
+<p>推送命令为<br>hexo clean;(清除缓存)<br>hexo g;(创建网页文件)<br>hexo d;（推送到GitHub）</p>
+<hr>
+<p>本文完 2018 1 18 16：47</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -404,7 +534,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
