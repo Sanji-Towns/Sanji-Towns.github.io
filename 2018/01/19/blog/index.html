@@ -97,20 +97,21 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="折腾记录," />
 
 
-<meta name="description" content="Chromebook搭建hexo环境标签（空格分隔）： 折腾记录  始 2018 1 19 16:55  前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。  但是我并不喜欢在寝室里写东西，虽然我那个垃圾机械键盘打字特爽，还是教室和图书馆暖气舒服些。于是我尝试着在我的VPS上搭建了h">
+<meta name="description" content="先放首歌 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: true, 				showlrc: 0, 				music: { 					title: &quot;阿刁&quot;, 					author: &quot;赵雷&quot;, 					url:">
+<meta name="keywords" content="折腾记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="chromebook上搭建hexo">
 <meta property="og:url" content="http://yoursite.com/2018/01/19/blog/index.html">
 <meta property="og:site_name" content="aDiao">
-<meta property="og:description" content="Chromebook搭建hexo环境标签（空格分隔）： 折腾记录  始 2018 1 19 16:55  前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。  但是我并不喜欢在寝室里写东西，虽然我那个垃圾机械键盘打字特爽，还是教室和图书馆暖气舒服些。于是我尝试着在我的VPS上搭建了h">
+<meta property="og:description" content="先放首歌 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: true, 				showlrc: 0, 				music: { 					title: &quot;阿刁&quot;, 					author: &quot;赵雷&quot;, 					url:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-20T02:56:43.450Z">
+<meta property="og:updated_time" content="2018-01-20T03:29:44.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="chromebook上搭建hexo">
-<meta name="twitter:description" content="Chromebook搭建hexo环境标签（空格分隔）： 折腾记录  始 2018 1 19 16:55  前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。  但是我并不喜欢在寝室里写东西，虽然我那个垃圾机械键盘打字特爽，还是教室和图书馆暖气舒服些。于是我尝试着在我的VPS上搭建了h">
+<meta name="twitter:description" content="先放首歌 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: true, 				showlrc: 0, 				music: { 					title: &quot;阿刁&quot;, 					author: &quot;赵雷&quot;, 					url:">
 
 
 
@@ -317,9 +318,23 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h1 id="Chromebook搭建hexo环境"><a href="#Chromebook搭建hexo环境" class="headerlink" title="Chromebook搭建hexo环境"></a>Chromebook搭建hexo环境</h1><p>标签（空格分隔）： 折腾记录</p>
-<hr>
-<p>始 2018 1 19 16:55</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>先放首歌<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			var ap = new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "阿刁",
+					author: "赵雷",
+					url: "http://m10.music.126.net/20180120113803/1bc1b139d9d15af35a2aca237ab1d49a/ymusic/c174/4f50/373f/30a7ebe3c491be353e553cb58035a218.mp3",
+					pic: "http://p1.music.126.net/BJgUd9aD9gpougZFASRTTw==/18548761162235571.jpg?param=130y130",
+				}
+			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
+		</script><br>始 2018 1 19 16:55</p>
 <hr>
 <p>前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。</p>
 <hr>
@@ -327,7 +342,9 @@
 <hr>
 <p>于是想起来在我的chromebook上搭hexo客户端，昨晚弄开发者模式，清除数据，重新激活，完蛋。上次激活用的方法不行了，大半夜，2点，用手机开热点给win10电脑，电脑用上anyconnect的VPN，再开WiFi给Chromebook，不行！开不了，于是放弃。今早上（11点）起来尝试在电脑上用shadowsocks全局代理，允许来自局域网连接，Chromebook和电脑连上同一路由器，设置Chromebook代理为手动HTTP，地址就是电脑ip(192.168.xxx.xxx)，端口1080，因为shadowsocks代理的端口是1080。然后就成了。</p>
 <hr>
-<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！<br>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
+<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！</p>
+<hr>
+<p>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
 <hr>
 <p>终5：14</p>
 
@@ -344,6 +361,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/折腾记录/" rel="tag"># 折腾记录</a>
+          
+        </div>
       
 
       
@@ -415,17 +438,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -448,6 +462,15 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
@@ -477,22 +500,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chromebook搭建hexo环境"><span class="nav-number">1.</span> <span class="nav-text">Chromebook搭建hexo环境</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

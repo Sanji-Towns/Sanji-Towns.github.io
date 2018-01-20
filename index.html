@@ -318,10 +318,10 @@
       
         
           
-            <script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+            <script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			var ap = new APlayer({
-				element: document.getElementById("aplayer0"),
+				element: document.getElementById("aplayer1"),
 				narrow: false,
 				autoplay: true,
 				showlrc: 0,
@@ -462,9 +462,23 @@
       
         
           
-            <script src="/assets/js/APlayer.min.js"> </script><h1 id="Chromebook搭建hexo环境"><a href="#Chromebook搭建hexo环境" class="headerlink" title="Chromebook搭建hexo环境"></a>Chromebook搭建hexo环境</h1><p>标签（空格分隔）： 折腾记录</p>
-<hr>
-<p>始 2018 1 19 16:55</p>
+            <script src="/assets/js/APlayer.min.js"> </script><p>先放首歌<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			var ap = new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "阿刁",
+					author: "赵雷",
+					url: "http://m10.music.126.net/20180120113803/1bc1b139d9d15af35a2aca237ab1d49a/ymusic/c174/4f50/373f/30a7ebe3c491be353e553cb58035a218.mp3",
+					pic: "http://p1.music.126.net/BJgUd9aD9gpougZFASRTTw==/18548761162235571.jpg?param=130y130",
+				}
+			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
+		</script><br>始 2018 1 19 16:55</p>
 <hr>
 <p>前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。</p>
 <hr>
@@ -472,7 +486,9 @@
 <hr>
 <p>于是想起来在我的chromebook上搭hexo客户端，昨晚弄开发者模式，清除数据，重新激活，完蛋。上次激活用的方法不行了，大半夜，2点，用手机开热点给win10电脑，电脑用上anyconnect的VPN，再开WiFi给Chromebook，不行！开不了，于是放弃。今早上（11点）起来尝试在电脑上用shadowsocks全局代理，允许来自局域网连接，Chromebook和电脑连上同一路由器，设置Chromebook代理为手动HTTP，地址就是电脑ip(192.168.xxx.xxx)，端口1080，因为shadowsocks代理的端口是1080。然后就成了。</p>
 <hr>
-<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！<br>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
+<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！</p>
+<hr>
+<p>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
 <hr>
 <p>终5：14</p>
 
@@ -691,6 +707,15 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
