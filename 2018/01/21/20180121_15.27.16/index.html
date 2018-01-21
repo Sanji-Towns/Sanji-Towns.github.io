@@ -97,26 +97,31 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="折腾记录," />
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="aDiao">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="极路由安装openwrt记录2018 1 21 14:21背景： 寝室的路由器是极路由一代，连接校园网后很不稳定，要不了半个钟头就无法上网，而校园网又是在线的，遂决定给路由器换系统。 1、长背景。大概一个月前想起要买一个路由器，搜索了一下知道openwrt的路由用mentohust是可以连接锐捷校园网的，也看到很多智能路由支持这个功能，在闲鱼逛了一圈后买了一个极路由，型号HC6361。买回来就能">
+<meta name="keywords" content="折腾记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="极路由安装openwrt记录">
+<meta property="og:url" content="http://yoursite.com/2018/01/21/20180121_15.27.16/index.html">
 <meta property="og:site_name" content="aDiao">
+<meta property="og:description" content="极路由安装openwrt记录2018 1 21 14:21背景： 寝室的路由器是极路由一代，连接校园网后很不稳定，要不了半个钟头就无法上网，而校园网又是在线的，遂决定给路由器换系统。 1、长背景。大概一个月前想起要买一个路由器，搜索了一下知道openwrt的路由用mentohust是可以连接锐捷校园网的，也看到很多智能路由支持这个功能，在闲鱼逛了一圈后买了一个极路由，型号HC6361。买回来就能">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-21T07:27:16.095Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="aDiao">
+<meta name="twitter:title" content="极路由安装openwrt记录">
+<meta name="twitter:description" content="极路由安装openwrt记录2018 1 21 14:21背景： 寝室的路由器是极路由一代，连接校园网后很不稳定，要不了半个钟头就无法上网，而校园网又是在线的，遂决定给路由器换系统。 1、长背景。大概一个月前想起要买一个路由器，搜索了一下知道openwrt的路由用mentohust是可以连接锐捷校园网的，也看到很多智能路由支持这个功能，在闲鱼逛了一圈后买了一个极路由，型号HC6361。买回来就能">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/21/20180121_15.27.16/"/>
 
 
-  <title>aDiao</title>
+  <title>极路由安装openwrt记录 | aDiao</title>
   
 
 
@@ -163,8 +168,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,9 +236,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/21/20180121_15.27.16/" itemprop="url">极路由安装openwrt记录</a></h1>
+          <h1 class="post-title" itemprop="name headline">极路由安装openwrt记录</h1>
         
 
         <div class="post-meta">
@@ -316,16 +318,12 @@
       
 
       
-        
-          
-            <script src="/assets/js/APlayer.min.js"> </script><h1 id="极路由安装openwrt记录"><a href="#极路由安装openwrt记录" class="headerlink" title="极路由安装openwrt记录"></a>极路由安装openwrt记录</h1><p>2018 1 21 14:21<br><strong>背景：</strong> 寝室的路由器是极路由一代，连接校园网后很不稳定，要不了半个钟头就无法上网，而校园网又是在线的，遂决定给路由器换系统。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><h1 id="极路由安装openwrt记录"><a href="#极路由安装openwrt记录" class="headerlink" title="极路由安装openwrt记录"></a>极路由安装openwrt记录</h1><p>2018 1 21 14:21<br><strong>背景：</strong> 寝室的路由器是极路由一代，连接校园网后很不稳定，要不了半个钟头就无法上网，而校园网又是在线的，遂决定给路由器换系统。</p>
 <h2 id="1、长背景。"><a href="#1、长背景。" class="headerlink" title="1、长背景。"></a>1、长背景。</h2><p>大概一个月前想起要买一个路由器，搜索了一下知道openwrt的路由用mentohust是可以连接锐捷校园网的，也看到很多智能路由支持这个功能，在闲鱼逛了一圈后买了一个极路由，型号HC6361。买回来就能用，还可以连接校园网，彻底告别了用笔记本分享网络这个既耗电又麻烦 的操作。而且开启了双栈协议后意外发现win10笔记本可以直接连接IPv6网站，chrome浏览器成为完整的chrome（虽然之前已经弄好了shadowsocks）。<br>但是这个路由器老是会无法上网，只能重启。直到昨天实在忍受不了，怒换openwrt。参考资料是MaxZing写的：<a href="https://www.jianshu.com/p/196a43b79c24" target="_blank" rel="noopener">极路由1、1s等机型刷OpenWrt–成为真正的极客</a>。</p>
 <h2 id="2、U-boot写入。"><a href="#2、U-boot写入。" class="headerlink" title="2、U-boot写入。"></a>2、U-boot写入。</h2><p>在ssh登录后先是更换了U-boot（也可以用breed），这个貌似是用来管理路由器系统的，在安装系统失败后路由器会变砖，这个U-boot允许再安装系统，而原厂的boot应该是不允许的，或者无法操作，命令为：<br>cd /tmp<br>wget <a href="http://rssn.cn/roms/uboot/HC6361-uboot.bin" target="_blank" rel="noopener">http://rssn.cn/roms/uboot/HC6361-uboot.bin</a><br>mtd write HC5661-uboot.bin u-boot<br>过程大概就是把u-boot文件下载到tmp文件夹，将u-boot文件写入 u-boot分区，下载地址是<a href="http://rssn.cn/。这个网盘里放了很多文件，选对应版本下载即可。" target="_blank" rel="noopener">http://rssn.cn/。这个网盘里放了很多文件，选对应版本下载即可。</a><br>写入之后建议备份原系统文件，否则当下一次安回原系统的时候可能会不可使用。我没有备份。</p>
 <h2 id="3、安装openwrt系统。"><a href="#3、安装openwrt系统。" class="headerlink" title="3、安装openwrt系统。"></a>3、安装openwrt系统。</h2><p>接下来就是安装openwrt，这是一个为路由器设计的微型Linux系统，也是在上边那个网址找到对应版本，命令为：<br><em>＃下载bin包</em><br>wget <a href="http://rssn.cn/roms/openwrt-ar71xx-generic-hiwifi-hc6361-squashfs-sysupgrade.bin" target="_blank" rel="noopener">http://rssn.cn/roms/openwrt-ar71xx-generic-hiwifi-hc6361-squashfs-sysupgrade.bin</a><br><em>#写入OpenWrt</em><br>sysupgrade -F -n openwrt-ar71xx-generic-hiwifi-hc6361-squashfs-sysupgrade.bin<br>几分钟等待后路由启动完成，搜索WiFi会发现一个叫OPENWRT的没有密码的WiFi，连接，浏览器进192.168.1.1设置密码并允许ssh登录。这时路由器已经是一个普通路由器了，但是还无法连接校园网。</p>
 <h2 id="4、安装使用mentohust。"><a href="#4、安装使用mentohust。" class="headerlink" title="4、安装使用mentohust。"></a>4、安装使用mentohust。</h2><p>mentohust是我科一位学长当年写出来锐捷认证软件，详见<a href="https://code.google.com/archive/p/mentohust" target="_blank" rel="noopener">https://code.google.com/archive/p/mentohust</a>。GitHub镜像地址<a href="https://github.com/HustLion/mentohust" target="_blank" rel="noopener">https://github.com/HustLion/mentohust</a><br>在我这个路由器里安装需要两个文件，一个是mentohust for openwrt， 另一个是libiconv库，此刻我忘记了当时是从哪里下载的（想起来再更新），先安装libiconv，再安装mentohust。<em>然后一定去看看wan口用的是哪个网卡！</em> （我就是默认用了eth0导致一直找不到服务器，把网线插在lan口又可以认证但无法上网，在这里折腾了几个小时，都准备换系统了）。再启动mentohust，命令为mentohust，填入相关信息即可。<br><strong>附</strong>一个<a href="https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk" target="_blank" rel="noopener">mentohust-wrt</a>，我还没试过（没有需求我就不会去弄）。</p>
 <h4 id="openwrt进阶，我还在学。"><a href="#openwrt进阶，我还在学。" class="headerlink" title="openwrt进阶，我还在学。"></a>openwrt进阶，我还在学。</h4>
-          
-        
       
     </div>
     
@@ -340,292 +338,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="aDiao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="aDiao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/19/blog/" itemprop="url">chromebook上搭建hexo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-19T17:18:29+08:00">2018-01-19</time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/折腾记录/" rel="tag"># 折腾记录</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <script src="/assets/js/APlayer.min.js"> </script><p>先放首歌<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
-		<script>
-			var ap = new APlayer({
-				element: document.getElementById("aplayer0"),
-				narrow: false,
-				autoplay: true,
-				showlrc: 0,
-				music: {
-					title: "阿刁",
-					author: "赵雷",
-					url: "http://dl.stream.qqmusic.qq.com/M800003fV3uf1b2Lba.mp3?vkey=469C52E0495DDD451F6A365C18464107192D3280B7B161828F1145C991FC51E31611C37EBCCB30B736B65255B7138E13391D25332EB3D03C&guid=5150825362&fromtag=1",
-					pic: "http://p1.music.126.net/BJgUd9aD9gpougZFASRTTw==/18548761162235571.jpg?param=130y130",
-				}
-			});
-			window.aplayers || (window.aplayers = []);
-			window.aplayers.push(ap);
-		</script><br>始 2018 1 19 16:55</p>
-<hr>
-<p>前天接触了和hexo，觉得这东西挺不错，看起来比WordPress搭博客要好玩一些，于是就在我的黑苹果系统里试用了hexo客户端，一个下午的时间成功让博客跑了起来。</p>
-<hr>
-<p>但是我并不喜欢在寝室里写东西，虽然我那个垃圾机械键盘打字特爽，还是教室和图书馆暖气舒服些。于是我尝试着在我的VPS上搭建了hexo客户端，还成功了，正常使用。但是这个行为特傻，在一台远程Linux主机上渲染好hexo网页文件再通过git把远程主机上的网页文件推送到github page，反正我觉得傻。而且远程编辑对网络要求比较严格，延迟高一点写起来不要太爽。</p>
-<hr>
-<p>于是想起来在我的chromebook上搭hexo客户端，昨晚弄开发者模式，清除数据，重新激活，完蛋。上次激活用的方法不行了，大半夜，2点，用手机开热点给win10电脑，电脑用上anyconnect的VPN，再开WiFi给Chromebook，不行！开不了，于是放弃。今早上（11点）起来尝试在电脑上用shadowsocks全局代理，允许来自局域网连接，Chromebook和电脑连上同一路由器，设置Chromebook代理为手动HTTP，地址就是电脑ip(192.168.xxx.xxx)，端口1080，因为shadowsocks代理的端口是1080。然后就成了。</p>
-<hr>
-<p>之前有备份本地文件，因为首次打开开发者模式会删除所有数据，进系统后所有软件、插件和设置都从云端恢复，为Google打电话！</p>
-<hr>
-<p>尝试在开发者模式搭建node.js 和git，多次无果。果断用crouton安装了一个Debian子系统，然后在子系统里搭建hexo成功！子系统大概用了1.6G空间。</p>
-<hr>
-<p>终5：14</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/19/hexo-githubd/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="aDiao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="aDiao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/19/hexo-githubd/" itemprop="url">Hexo+Github搭建个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-19T16:48:13+08:00">2018-01-19</time>
+              <a href="/2018/01/19/blog/" rel="next" title="chromebook上搭建hexo">
+                <i class="fa fa-chevron-left"></i> chromebook上搭建hexo
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <script src="/assets/js/APlayer.min.js"> </script><h1 id="如何用hexo和GitHub建立一个个人博客"><a href="#如何用hexo和GitHub建立一个个人博客" class="headerlink" title="如何用hexo和GitHub建立一个个人博客"></a>如何用hexo和GitHub建立一个个人博客</h1><h2 id="简单博客需要一个域名和一个放网页文件的空间"><a href="#简单博客需要一个域名和一个放网页文件的空间" class="headerlink" title="简单博客需要一个域名和一个放网页文件的空间"></a>简单博客需要一个域名和一个放网页文件的空间</h2><hr>
-<h2 id="1、博客空间。"><a href="#1、博客空间。" class="headerlink" title="1、博客空间。"></a>1、博客空间。</h2><p>注册GitHub，并创建repository，命名规则为“username.github.io”。创建的同时初始化readme.md. 此时<a href="http://username.github.io/" target="_blank" rel="noopener">http://username.github.io/</a> 应该已经可以访问。如果不可以，在repository首页点击setting，下拉到GitHub pages检查是什么问题。这就是博客空间，免费300M。<br>在任意终端（Windows是打开cmd，Mac是打开终端）输入 ping username.github.io ，这步是为了得到博客空间的IP地址，用于绑定域名。</p>
-<hr>
-<h2 id="2、注册域名。"><a href="#2、注册域名。" class="headerlink" title="2、注册域名。"></a>2、注册域名。</h2><p>可以在<a href="http://freenom.com" target="_blank" rel="noopener">freenom.com</a>注册免费一年的域名，后缀为.cf .ga .gq .ml 等是免费的。注册好后点击services&gt;my domains. 点击域名，点击freenom dns，添加A记录为ip地址，CNAME记录为username.github.io. 十分钟左右访问域名就能访问到GitHub Page，内容应该为username.github.io，其他啥都没有。</p>
-<hr>
-<h2 id="3、网页文件和博客内容。"><a href="#3、网页文件和博客内容。" class="headerlink" title="3、网页文件和博客内容。"></a>3、网页文件和博客内容。</h2><p>在本机搭建hexo环境（因为我选择hexo，也可以是其他的）。这里的原理是在本机生成网页文件，然后用git将网页文件推送到GitHub repository，也就是你的博客空间。环境搭建参考hexo官方文档<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
-<hr>
-<h2 id="4、文件推送。"><a href="#4、文件推送。" class="headerlink" title="4、文件推送。"></a>4、文件推送。</h2><p>连接上GitHub，打开_config.yml（hexo配置文件，以空格为缩进，冒号后面必须有空格）文件最后添加或改写为<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a><br>  branch: master</p>
-<p>推送命令为<br>hexo clean;(清除缓存)<br>hexo g;(创建网页文件)<br>hexo d;（推送到GitHub）</p>
-<hr>
-<p>本文完 2018 1 18 16：47</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -635,14 +377,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -663,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -725,6 +481,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#极路由安装openwrt记录"><span class="nav-number">1.</span> <span class="nav-text">极路由安装openwrt记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、长背景。"><span class="nav-number">1.1.</span> <span class="nav-text">1、长背景。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、U-boot写入。"><span class="nav-number">1.2.</span> <span class="nav-text">2、U-boot写入。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、安装openwrt系统。"><span class="nav-number">1.3.</span> <span class="nav-text">3、安装openwrt系统。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、安装使用mentohust。"><span class="nav-number">1.4.</span> <span class="nav-text">4、安装使用mentohust。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#openwrt进阶，我还在学。"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">openwrt进阶，我还在学。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -849,6 +621,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script>
+
+
 
   
 
