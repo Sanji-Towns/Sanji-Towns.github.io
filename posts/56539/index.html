@@ -100,17 +100,17 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显">
+<meta name="description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/posts/56539/index.html">
 <meta property="og:site_name" content="aDiao">
-<meta property="og:description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显">
+<meta property="og:description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显得">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T11:43:28.040Z">
+<meta property="og:updated_time" content="2018-01-27T08:34:57.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github搭建个人博客">
-<meta name="twitter:description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显">
+<meta name="twitter:description" content="简单博客需要一个域名（甚至不需要，但是带着别人的域名老是会有寄人篱下的感觉，虽然把空间放GitHub已经是寄人篱下）和一个放网页文件的空间 1、博客空间。将博客空间放在GitHub上，不用自己操心服务器，实在是太方便。当然，这是用hexo渲染的静态网页，对于个人博客来说静态网页优点很多，加载速度快，资源占用少等等。如果用WordPress搭建的话需要有空间，数据库，FTP。总的来说对于个人博客显得">
 
 
 
@@ -333,6 +333,8 @@
 <p>博客空间放在GitHub上的原理的GitHub会给开发者一个300M的免费空间的GitHub pages用于展示项目内容，把这个项目展示的内容修改一下就是个人博客了。</p>
 <p>方法：注册GitHub，并创建repository，命名规则为“username.github.io”。创建的同时初始化readme.md. 此时<a href="http://username.github.io/" target="_blank" rel="noopener">http://username.github.io/</a> 应该已经可以访问。如果不可以，在repository首页点击setting，下拉到GitHub pages检查是什么问题。这就是博客空间，免费300M。</p>
 <p><em>在任意终端（Windows是打开cmd，Mac是打开终端）输入 ping username.github.io ，这步是为了得到博客空间的IP地址，用于绑定域名。(可选)</em></p>
+<a id="more"></a>
+<!-- more -->
 <hr>
 <h2 id="2、注册域名。"><a href="#2、注册域名。" class="headerlink" title="2、注册域名。"></a>2、注册域名。</h2><p>可以在<a href="http://freenom.com" target="_blank" rel="noopener">freenom.com</a>注册免费一年的域名，后缀为.cf .ga .gq .ml 等是免费的。注册好后点击services&gt;my domains. 点击域名，点击freenom dns，<em>添加A记录为ip地址，（可选）。</em>添加CNAME记录为username.github.io. 十分钟左右访问域名就能访问到GitHub Page，内容应该为username.github.io，其他啥都没有。</p>
 <hr>
